@@ -1,47 +1,20 @@
+import Section from '@/component/layout/Section';
 import Image from 'next/image';
 
 export default function Home() {
     return (
-        <div id="wrap">
-            <header id="header">header</header>
-            <div className="intro">intro</div>
-            <main id="container">
-                <section className="sec-g">
-                    <div className="inner">
-                        <h2 className="sec-g__title">section title</h2>
-                        <p className="sec-g__desc">section subtitle</p>
-                        <div className="sec=g al">section content</div>
-                        <a href="#" className="more">
-                            more section
-                        </a>
-                        SORRY
-                    </div>
-                </section>
-                <section className="sec-g">
-                    <div className="inner">
-                        <h2 className="sec-g__title">section title</h2>
-                        <p className="sec-g__desc">section subtitle</p>
-                        <div className="sec=g al">section content</div>
-                        <a href="#" className="more">
-                            more section
-                        </a>
-                        SORRY
-                    </div>
-                </section>
-                <section className="sec-g">
-                    <div className="inner">
-                        <h2 className="sec-g__title">section title</h2>
-                        <p className="sec-g__desc">section subtitle</p>
-                        <div className="sec=g al">section content</div>
-                        <a href="#" className="more">
-                            more section
-                        </a>
-                        SORRY
-                    </div>
-                </section>
-                main
-            </main>
-            <footer id="footer">footer</footer>
-        </div>
+        <>
+            <Section tit="섹션1" desc="aaaaa">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </Section>
+            <Section tit="섹션2" desc="bbbbb" bg="gray"></Section>
+            <Section tit="섹션3" desc="ccccc"></Section>
+            <Section tit="섹션4" bg="gray"></Section>
+        </>
     );
 }
